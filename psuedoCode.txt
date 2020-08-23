@@ -1,0 +1,41 @@
+1. Get the count of the tales submitted by each writer. 
+    frequency = {}
+
+    for author_id, tale_id in data:
+    frequency[author_id]++
+    
+2. Sort this count in decreasing order of frequency. 
+    sort(frequency, desc=True)
+
+3. Since we have to post 10 posts per day, we can divide the authors into groups such that authors that belong to the same group compete for a single post on a given day.
+
+4. Since we require 10 groups for the 10 posts, we need the total number of posts that can be included in a particular group. 
+    totalPosts = len(data)
+    postsInOneDay = 10
+    binWidth = totalPosts // postsInOneDay
+
+5. The number of posts in a group will be the totalPosts/ postsInOneDay = ~60. 
+    groups = []
+    currentGroup = []
+    count = 0
+
+    for key, value in frequency:
+
+        count += value
+        currentGroup.append({key, value})
+        if count >= binWidth && len(groups) < postsInOneDay:
+            groups.append(currentGroup)
+            currentGroup = []
+            count = 0
+
+    if(len(currentGroup)):
+    groups.append(currentGroup)
+
+6. Now that we have 10 groups, for each group we will decide which author will get that post. For this, we will choose an author in Round Robin manner.
+
+    lastTakenWriter[groups.length]
+
+    for group in groups:
+        writerChosen = (lastTakenAuthor[group] + 1) % group.length 
+
+
