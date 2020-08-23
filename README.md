@@ -33,10 +33,10 @@ Why was this method selected:
 
 Happiness Index for a writer is a function of: 
 * The number of his tales that were published
-* How frequently the posts were published. 
+* The interval between which the consecutive tales were published. 
 
 * In this case, writers who have written many tales will get a chance to be selected freqeuntly and hence their happiness index will be high. (30/72 tales will be posted for the * 1st writter, so 50% tales on a everyday basis). 
-* The writers who have written less tales will be happy because majority of their tales will get published but the frequency will be low in this case. 
+* The writers who have written less tales will be happy because majority of their tales will get published but the interval will be high in this case. 
 * Since we have tried to ensure that a writer has atleast 1 published post, the unhappy index should be low. 
 
 
