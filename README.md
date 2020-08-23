@@ -10,16 +10,22 @@ The algorithm:
 
 The psudeo code is present in psuedocode.txt. 
 
-In this case, we have a total of 562 posts and 75 different writers. 
-According to the algorithm, there will be 10 groups and each group will consist of authors such that the total posts written by those authors are ~60. 
-Our first group will consist of the writer(ID: 999924001444) who has written 72 tales. 
-The 2nd group will consist of writers(ID: 999524056644 and 1042342986304) who have written 29 and 28 tales respectively which sum up to 58 tales. 
-Similary, the last group will consist of writers who have each written upto 3 tales (ID: 1044447208324 to 1042281730084) since they all sum upto 62 tales. This group consists of 34 writers. 
+* In this case, we have a total of 562 posts and 75 different writers. 
+
+![Image](https://dl.dropbox.com/s/yf3khgma5xp4jpq/ttt-writer.JPG?dl=0)
+
+* According to the algorithm, there will be 10 groups and each group will consist of authors such that the total posts written by those authors are ~60. 
+* Our first group will consist of the writer(ID: 999924001444) who has written 72 tales. 
+* The 2nd group will consist of writers(ID: 999524056644 and 1042342986304) who have written 29 and 28 tales respectively which sum up to 58 tales. 
+
+![Image](https://dl.dropbox.com/s/fdvmt92yjsp1s55/ttt-writer1.JPG?dl=0)
+
+* Similary, the last group will consist of writers who have each written upto 3 tales (ID: 1044447208324 to 1042281730084) since they all sum upto 62 tales. This group consists of 34 writers. 
 
 Now everyday, 
-The 1st post will be of the writer who has written 72 posts since he is the only member of his group. 
-The 2nd post will be of one of the writers of the 2nd group. This will be selected alternately. 
-And the 10th post will be of one the 34 writers from that group. 
+* The 1st post will be of the writer who has written 72 posts since he is the only member of his group. 
+* The 2nd post will be of one of the writers of the 2nd group. This will be selected alternately. 
+* And the 10th post will be of one the 34 writers from that group. 
 
 Why was this method selected: 
 * It is advisable for authors who have written similar number of posts to compete with each other. 
@@ -29,9 +35,9 @@ Happiness Index for a writer is a function of:
 * The number of posts that were published for a writer
 * How frequently the posts were published. 
 
-In this case, writes who have written many tales will get a chance to be selected freqeuntly and hence their happiness index will be high. (30/72 tales will be posted for the 1st writter, so 50% tales on a everyday basis). 
-The writes who have written less tales will be happy because majority of their tales will get published but the frequency will be low in this case. 
-Since we have tried to ensure that a writer has atleast 1 published post, the unhappy index should be low. 
+* In this case, writes who have written many tales will get a chance to be selected freqeuntly and hence their happiness index will be high. (30/72 tales will be posted for the * 1st writter, so 50% tales on a everyday basis). 
+* The writes who have written less tales will be happy because majority of their tales will get published but the frequency will be low in this case. 
+* Since we have tried to ensure that a writer has atleast 1 published post, the unhappy index should be low. 
 
 
 
