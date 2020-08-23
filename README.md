@@ -29,14 +29,14 @@ Now everyday,
 
 Why was this method selected: 
 * It is advisable for authors who have written similar number of posts to compete with each other. 
-* If the others were just selected in proportion to the number of posts they have written, the writer who have written just 1 tale would stand a very slow chance as compared to the writes with 72 tales. 
+* If the writers were just selected in proportion to the number of posts they have written, the writer who has written just 1 tale would stand a very slow chance as compared to the writer with 72 tales. 
 
 Happiness Index for a writer is a function of: 
-* The number of posts that were published for a writer
+* The number of his tales that were published
 * How frequently the posts were published. 
 
-* In this case, writes who have written many tales will get a chance to be selected freqeuntly and hence their happiness index will be high. (30/72 tales will be posted for the * 1st writter, so 50% tales on a everyday basis). 
-* The writes who have written less tales will be happy because majority of their tales will get published but the frequency will be low in this case. 
+* In this case, writers who have written many tales will get a chance to be selected freqeuntly and hence their happiness index will be high. (30/72 tales will be posted for the * 1st writter, so 50% tales on a everyday basis). 
+* The writers who have written less tales will be happy because majority of their tales will get published but the frequency will be low in this case. 
 * Since we have tried to ensure that a writer has atleast 1 published post, the unhappy index should be low. 
 
 
